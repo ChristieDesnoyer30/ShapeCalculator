@@ -41,6 +41,7 @@ public class Calculator {
 
             System.out.println("The area of a triangle is : " + ((shapeHeight * shapeWidth)/2));
 
+
         }
         else if (shape.equalsIgnoreCase("rectangle")){
 
@@ -48,6 +49,10 @@ public class Calculator {
 
         }
 
+        else {
+
+            System.out.println("Not a valid shape");
+        }
 
 
     }

@@ -14,6 +14,12 @@ public class Main {
 
       String userShape = scan.nextLine();
 
+      if (!userShape.equalsIgnoreCase("triangle") || !userShape.equalsIgnoreCase("rectangle")){
+
+          System.out.println("Not a valid option, enter either TRIANGLE or RECTANGLE");
+          userShape = scan.nextLine();
+      }
+
       System.out.println("Enter the shape's height");
       double userHeight = scan.nextDouble();
 
@@ -21,10 +27,11 @@ public class Main {
         double userLength = scan.nextDouble();
 
 
-      calc.calculateArea(userShape, userHeight, userLength);
+        calc.calculateArea(userShape, userHeight, userLength);
 
-      calc.calculateArea("Triangle", 5.5, 6.5);
-      calc.calculateArea("Rectangle", 5, 10);
+        // these were just for testing
+//      calc.calculateArea("Triangle", 5.5, 6.5);
+//      calc.calculateArea("Rectangle", 5, 10);
 
 
 
